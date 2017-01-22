@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Application Form</title>
+</head>
+<body>
+
+<!-- your html goes here -->
+    <h1>Application Form</h1>
+    
+    <p class="instruction">
+        Please fill out this application form.
+    </p>
+    <br>
+   
+    <form action="/application-success" method="POST">
+        
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname">
+        <br><br>
+        
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname">
+        <br><br>
+        
+        <label for="salary">Minimum Salary Requirement:</label>
+        <select id="salary" name="salary">
+            <option value="$50,000">$50,000</option>
+            <option value="$70,000">$70,000</option>
+            <option value="$90,000">$90,000</option>
+            <option value="$120,000">$120,000</option>
+        </select>
+        <br><br>
+        
+        <fieldset>
+            <legend>Which job are you applying for?:</legend>
+            <input id="software" type="radio" name="job" value="software">
+            <label for="software">Software Engineer</label>
+            <br>
+            <input id="QA" type="radio" name="job" value="QA">
+            <label for="QA">QA Engineer</label>
+            <br>
+            <input id="PM" type="radio" name="job" value="PM">
+            <label for="PM">Product Manager</label>
+        </fieldset>
+        <br>
+        
+        <input type="submit" value="Submit">
+    
+    </form>
+
+</body>
+</html>
